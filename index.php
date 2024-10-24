@@ -63,3 +63,12 @@ $myarrayDoblado = array_map(function($value){
     return $value * 2;
 }, $myArray);
 //print_r($myarrayDoblado);
+
+$myArrayReduced = array_reduce($myArray,
+    function($accumulator, $value) {
+        return $accumulator + $value;
+    }
+);
+//print_r($myArrayReduced);
+
+//print_r(array_search(4, $myarrayDoblado));
