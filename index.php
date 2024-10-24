@@ -52,4 +52,14 @@ $array_filtrandoPares = array_filter($myArray, callback: function( $value){
  */
 //print_r($array_filtrandoPares);
 
+$myArray = [
+		"apple" => 2,
+		"banana" => 3,
+		"cherry" => 1,
+		"date" => 4
+];
 
+$myarrayDoblado = array_map(function($value){
+    return $value * 2;
+}, $myArray);
+//print_r($myarrayDoblado);
